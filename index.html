@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- === Bootstrap CSS === -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <!-- === Style CSS === -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- === FONTAWESOME === -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <section class="form-bg p-2 p-md-4 position-relative ">
+        <div class="container-fluid">
+            <div class="row g-3 justify-content-center justify-content-md-end align-items-start">
+                <div class="col-md-6 text-line position-fixed">
+                    <div class=" ">
+                        <h2 class="text-white text-register">
+                            <strong>Register Now</strong>
+                        </h2>
+                        <div class="h5 text-register2">
+                            <strong>Step<span>UP</span></strong> your Skills with us
+                        </div>
+                    </div>
+                    <div class="p-3 d-none d-md-block social-links">
+                        <div class="w-25">
+                            <a href="https://www.facebook.com/StepupITOffcial"
+                                class="text-decoration-none py-0 py-md-3  d-flex m-0 p-0 align-items-center">
+                                <i class="fa-brands fa-facebook fs-4  me-2 p-0"></i>
+                                <p class="m-0 p-0">StepUpItSolution</p>
+                            </a>
+                            <a href="https://instagram.com/stepup_its_official?igshid=MzRIODBiNWFIZA"
+                                class="text-decoration-none py-0 py-md-3  d-flex m-0 p-0 align-items-center">
+                                <i class="fa-brands fa-instagram fs-4  me-2 p-0"></i>
+                                <p class="m-0 p-0">stepup_its_official</p>
+                            </a>
+                            <a href="https://www.stepupsp.com/"
+                                class="text-decoration-none py-0 py-md-3  d-flex m-0 p-0 align-items-center">
+                                <i class="fa-solid fa-globe fs-4  me-2 p-0"></i>
+                                <p class="m-0 p-0">www.stepupsp.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-5 bg-white shadow-lg p-3 p-md-5 beside-left rounded-4">
+                    <div class="p-3 d-flex justify-content-center justify-content-md-start">
+                        <img src="/StepupLogo.png" alt="">
+                    </div>
+                    <form action="" class="needs-validation">
+                        <!-- ==/ PERSONAL DETAILS NAME & FATHER NAME /== -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" id="name" class="form-control" placeholder="Name" required>
+                                    <label for="name" class="">Name</label>
+                                    <small class="form-text text-muted ms-3">e.g Ahmed</small>
+                                    <div class="invalid-feedback">
+                                        Please enter your name.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" id="father-name" class="form-control" placeholder="Father Name"
+                                        required>
+                                    <label for="father-name">Father Name</label>
+                                    <small class="form-text text-muted ms-3">e.g Sattar</small>
+                                    <div class="invalid-feedback">
+                                        Please enter your father's name.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-3">
+                                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                                    <label for="email">Email</label>
+                                    <small class="form-text text-muted ms-3">example@example.com</small>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==/ PERSONAL DETAILS CNIC & MOBILE NO /== -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <input type="text" id="nic" class="form-control"
+                                        placeholder="NIC e.g., 12345-1234567-1" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}"
+                                        required>
+                                    <label for="nic">Enter your CNIC</label>
+                                    <small class="form-text text-muted ms-3">e.g., 12345-1234567-1</small>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid NIC number in the format 12345-1234567-1.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <div class="input-group">
+                                        <div class="form-floating mb-3">
+                                            <input type="tel" id="mobile-number" class="form-control"
+                                                placeholder="Mobile Number" pattern="[0-9]{10}" required>
+                                            <label for="mobile-number">Mobile Number</label>
+                                            <small class="form-text text-muted ms-3">e.g., 03000000000</small>
+                                            <div class="invalid-feedback">
+                                                Please enter a valid mobile number.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==/ PERSONAL DETAILS GENDER & DOB /== -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <input id="startDate" placeholder="DOB" class="form-control" type="date" required>
+                                    <label for="startDate">Date of Birth</label>
+                                    <small class="form-text text-muted ms-3">e.g., 09/18/2003</small>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <select id="gender" class="form-select" aria-label="Gender" required>
+                                        <option value="" selected disabled>Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <label for="gender">Gender</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==/ PREFERRED TIME INPUT BOX /== -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-3">
+                                    <input type="text" id="preTime" class="form-control" placeholder="Preferred Time"
+                                        required>
+                                    <label for="preTime">Preferred Time</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==/ DEPARTMENT & COURSES /== -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="department">
+                                        <option value="">Select Department</option>
+                                        <option value="dept1">Department 1</option>
+                                        <option value="dept2">Department 2</option>
+                                        <option value="dept3">Department 3</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                    <label for="department">Department</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="Course">
+                                        <option value="">Courses</option>
+                                        <option value="Cour1">Course 1</option>
+                                        <option value="Cour2">Course 2</option>
+                                        <option value="Cour3">Course 3</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                    <label for="Course">Courses</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==/ PACKAGE & REFERENCES /== -->
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="Package">
+                                        <option value="">Package</option>
+                                        <option value="Pkg1">Package 1</option>
+                                        <option value="Pkg2">Package 2</option>
+                                        <option value="Pkg3">Package 3</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                    <label for="Package">Package</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="Refrence">
+                                        <option value="">Reference</option>
+                                        <option value="ref1">Reference 1</option>
+                                        <option value="ref2">Reference 2</option>
+                                        <option value="ref3">Reference 3</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                    <label for="Refrence">Reference</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==/ REFERENCE NAME /== -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating">
+                                    <input type="text" id="refName" class="form-control" placeholder="refName">
+                                    <label for="refName" class="text-black">Refrence Name</label>
+                                    <small class="form-text text-muted ms-3">e.g Yasir</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==/ CHECK BOX /== -->
+                        <!-- <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="exampleCheckbox" required>
+                            <label class="form-check-label fs-6 text-decoration-underline" for="exampleCheckbox">
+                                By click, you agree to our Privacy Policy
+                            </label>
+                            <div class="invalid-feedback">You must check this box.</div>
+                        </div> -->
+                        <!-- ==/ BUTTONS SUBMIT AND RESET /== -->
+                        <div class="row mt-3 mb-5">
+                            <div class="col d-flex justify-content-center">
+                                <button type="submit" class="btn-submit rounded-3" id="submitButton">Submit</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class=" d-flex justify-content-between">
+                                <div class=" text-muted ms-2  fs-6 text-center">
+                                    2023 Step Up IT Solution ®
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === BOOTSTRAP JS === -->
+    <link rel="stylesheet" href="JS/bootstrap.bundle.min.js">
+    <!-- === JQUERY === -->
+    <link rel="stylesheet" href="JS/jquery.min.js">
+
+
+    <!-- === / FORM VALIDATIONS / === -->
+    <script>
+        const submitButton = document.getElementById('submitButton');
+        const checkbox = document.getElementById('exampleCheckbox');
+        const nameInput = document.getElementById('name');
+        const fatherNameInput = document.getElementById('father-name');
+        const emailInput = document.getElementById('email');
+        const nicInput = document.getElementById('nic');
+        const mobileInput = document.getElementById('mobile-number');
+
+        nameInput.addEventListener('click', function () {
+            nameInput.classList.remove('is-invalid');
+        });
+
+        fatherNameInput.addEventListener('click', function () {
+            fatherNameInput.classList.remove('is-invalid');
+        });
+
+        emailInput.addEventListener('click', function () {
+            emailInput.classList.remove('is-invalid');
+        });
+
+        nicInput.addEventListener('click', function () {
+            nicInput.classList.remove('is-invalid');
+        });
+
+        mobileInput.addEventListener('click', function () {
+            mobileInput.classList.remove('is-invalid');
+        });
+
+        submitButton.addEventListener('click', function (event) {
+            if (!checkbox.checked || !nameInput.checkValidity() || !fatherNameInput.checkValidity() || !emailInput.checkValidity() || !nicInput.checkValidity() || !mobileInput.checkValidity()) {
+                if (!checkbox.checked) {
+                    checkbox.classList.add('is-invalid');
+                } else {
+                    checkbox.classList.remove('is-invalid');
+                }
+
+                if (!nameInput.checkValidity()) {
+                    nameInput.classList.add('is-invalid');
+                }
+
+                if (!fatherNameInput.checkValidity()) {
+                    fatherNameInput.classList.add('is-invalid');
+                }
+
+                if (!emailInput.checkValidity()) {
+                    emailInput.classList.add('is-invalid');
+                }
+
+                if (!nicInput.checkValidity()) {
+                    nicInput.classList.add('is-invalid');
+                }
+
+                if (!mobileInput.checkValidity()) {
+                    mobileInput.classList.add('is-invalid');
+                }
+
+                event.preventDefault();
+            } else {
+                checkbox.classList.remove('is-invalid');
+            }
+        });
+    </script>
+</body> 
+
+</html>
